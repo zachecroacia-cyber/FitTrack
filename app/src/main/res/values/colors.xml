@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colores básicos -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Identidad FitTrack -->
+    <color name="fittrack_green">#A8E63D</color>
+    <color name="fittrack_green_dark">#7CB82C</color>
+
+    <!-- Fondos -->
+    <color name="fittrack_background">#242424</color>
+    <color name="fittrack_surface">#3A3A3A</color>
+    <color name="fittrack_surface_light">#505050</color>
+
+    <!-- Textos -->
+    <color name="fittrack_text_primary">#FFFFFF</color>
+    <color name="fittrack_text_secondary">#BDBDBD</color>
+
+    <!-- Estados -->
+    <color name="fittrack_error">#D9534F</color>
+
+</resources>

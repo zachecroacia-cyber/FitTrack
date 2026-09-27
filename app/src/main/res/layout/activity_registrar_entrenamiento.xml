@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Nombre del ejercicio -->
+        <TextView
+            android:id="@+id/txtNombreEjercicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Nombre del ejercicio"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Aquí Java agregará las series -->
+        <LinearLayout
+            android:id="@+id/contenedorSeries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" />
+
+        <!-- Agregar una nueva serie -->
+        <Button
+            android:id="@+id/btnAgregarSerie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="+ Agregar serie" />
+
+        <!-- Guardar el entrenamiento -->
+        <Button
+            android:id="@+id/btnGuardarEntrenamiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:text="Guardar entrenamiento" />
+
+    </LinearLayout>
+
+</ScrollView>
