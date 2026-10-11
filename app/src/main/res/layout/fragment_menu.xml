@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fittrack_sidebar"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <!-- Nombre de la aplicación -->
+        <TextView
+            android:id="@+id/txtLogoMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="28dp"
+            android:gravity="center"
+            android:text="FitTrack"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- PERFIL -->
+        <Button
+            android:id="@+id/btnMenuPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/fittrack_menu_selected"
+            android:text="Perfil"
+            android:textAllCaps="false"
+            android:textColor="@color/fittrack_green"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:paddingHorizontal="2dp" />
+
+        <!-- FOTOS -->
+        <Button
+            android:id="@+id/btnMenuFotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/fittrack_surface"
+            android:text="Fotos"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:paddingHorizontal="2dp" />
+
+        <!-- VIDEOS -->
+        <Button
+            android:id="@+id/btnMenuVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/fittrack_surface"
+            android:text="Videos"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:paddingHorizontal="2dp" />
+
+
+
+        <!-- SECCIÓN ENTRENAMIENTO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="ENTRENAMIENTO"
+            android:textColor="@color/fittrack_green"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:maxLines="1" />
+
+        <!-- MIS RUTINAS -->
+        <Button
+            android:id="@+id/btnMenuMisRutinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/fittrack_surface"
+            android:text="Mis Rutinas"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:maxLines="1"
+            android:paddingHorizontal="2dp" />
+
+        <!-- HISTORIAL -->
+        <Button
+            android:id="@+id/btnMenuHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/fittrack_surface"
+            android:text="Historial"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:paddingHorizontal="2dp" />
+
+        <!-- PROGRESO -->
+        <Button
+            android:id="@+id/btnMenuProgreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/fittrack_surface"
+            android:text="Progreso"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:maxLines="1"
+            android:paddingHorizontal="2dp" />
+
+    </LinearLayout>
+
+</ScrollView>

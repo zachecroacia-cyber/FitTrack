@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fittrack_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/contenedorContenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Título de la sección seleccionada -->
+        <TextView
+            android:id="@+id/txtTituloContenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Perfil"
+            android:textColor="@color/fittrack_green"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Línea decorativa -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/fittrack_green" />
+
+        <!-- Área donde mostraremos cada funcionalidad -->
+        <LinearLayout
+            android:id="@+id/contenedorDinamico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMensajeInicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Bienvenido a FitTrack"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
@@ -27,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnProgreso =
                 findViewById(R.id.btnProgreso);
+
+        Button btnPanelInteractivo =
+                findViewById(R.id.btnPanelInteractivo);
 
         // Abrir Mis Rutinas
         btnMisRutinas.setOnClickListener(v -> {
@@ -61,6 +65,18 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        // Abrir Panel Interactivo
+        btnPanelInteractivo.setOnClickListener(v -> {
+
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    PanelFragmentsActivity.class
+            );
+
+            startActivity(intent);
+        });
+
+        // Ajustar pantalla a las barras del sistema
         ViewCompat.setOnApplyWindowInsetsListener(
                 findViewById(R.id.main),
                 (v, insets) -> {

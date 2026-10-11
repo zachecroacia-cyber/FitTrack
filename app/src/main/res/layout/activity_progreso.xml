@@ -4,6 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fittrack_background"
     android:fillViewport="true">
 
     <LinearLayout
@@ -11,22 +12,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="20dp">
 
+        <!-- Título -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="Progreso"
+            android:text="Mi Progreso"
+            android:textColor="@color/fittrack_green"
             android:textSize="28sp"
             android:textStyle="bold" />
 
+        <!-- Selector de ejercicio -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Ejercicio"
+            android:layout_marginTop="24dp"
+            android:text="Seleccionar ejercicio"
+            android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -34,39 +39,118 @@
             android:id="@+id/spinnerEjercicios"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/fittrack_green" />
 
+        <!-- Estadísticas existentes -->
         <TextView
             android:id="@+id/txtEntrenamientosRegistrados"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Entrenamientos registrados: 0"
-            android:textSize="18sp" />
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/txtPesoMaximo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:text="Peso máximo: 0 kg"
-            android:textSize="18sp" />
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/txtRepeticionesMaximas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:text="Máximo de repeticiones: 0"
-            android:textSize="18sp" />
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/txtUltimoEntrenamiento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:text="Último entrenamiento: sin datos"
-            android:textSize="18sp" />
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Gráfica de peso máximo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Evolución del peso máximo"
+            android:textColor="@color/fittrack_green"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <com.fittrack.app.GraficaProgresoView
+            android:id="@+id/graficaPeso"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/fittrack_surface" />
+
+        <!-- Gráfica de repeticiones -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Evolución de repeticiones"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <com.fittrack.app.GraficaProgresoView
+            android:id="@+id/graficaRepeticiones"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/fittrack_surface" />
+
+        <!-- Gráfica de volumen -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Volumen de entrenamiento"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <com.fittrack.app.GraficaProgresoView
+            android:id="@+id/graficaVolumen"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/fittrack_surface" />
+
+        <!-- Comparación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Comparación de entrenamientos"
+            android:textColor="@color/fittrack_green"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtComparacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="32dp"
+            android:background="@color/fittrack_surface"
+            android:padding="16dp"
+            android:text="Necesitas al menos dos entrenamientos para comparar tu progreso."
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 
     </LinearLayout>
 

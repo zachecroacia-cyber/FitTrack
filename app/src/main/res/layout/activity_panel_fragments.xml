@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/fittrack_background"
+    android:fitsSystemWindows="true">
+
+    <!-- Fragment izquierdo: menú -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/contenedorMenu"
+        android:name="com.fittrack.app.MenuFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <!-- Fragment derecho: contenido -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/contenedorPrincipal"
+        android:name="com.fittrack.app.ContenidoFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+</LinearLayout>
